@@ -1,0 +1,21 @@
+//
+// Created by Zeynep Nisa on 4.12.2023.
+//
+
+#include "Packet.h"
+#include <iostream>
+
+Packet::Packet(int _layer_ID) {
+    layer_ID = _layer_ID;
+}
+
+
+ostream& operator<<(ostream& os, const Packet& packet) {
+    os << "Packet layer: " << packet.layer_ID;
+    return os;
+}
+
+Packet::~Packet() {
+    // TODO: Free any dynamically allocated memory if necessary.
+}
+
